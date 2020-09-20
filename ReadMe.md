@@ -1,17 +1,21 @@
+Tools used: HTML, CSS, JQuery, Sass, and Bootstrap
 
-Tools used: HTML, Css, JQuery, Sass and Bootstrap
-
-Bootstrap was used to take advantage of its responsive classes and grid system to develop a
-responsive design which will adjust to all screen sizes and devices. 
-
+Bootstrap: 
+Used: Responsive classes and Grid System. 
+Purpose: Responsive design across all screen sizes and devices.
 Screen Responsiveness tested on:
 	- Firefox Mozilla
 	- Google Chrome
 	- Microsoft Edge
 	- Mobile Screens using Developer Tools
 
-Sass varaiations ensured easy manipulation and consistency of code. 
-Mixins allowed for code reusablity. Also, flexibility through parameters.
-Media Query used to ensure responsiveness on small screen sizes. 
+Sass 
+Used: Variables, Mixins, Media Query
+Purpose: 
+Variables- Easy manipulation and consistency of code. 
+Mixin-Code reusability. Flexibility through parameters. 
+Media Query-Responsiveness
 
-Ajax was used to improve performance and permit server communication to take place asynchronously.
+JQuery
+Used: Ajax
+Purpose: Improve performance. Permit server communication to take place asynchronously.
