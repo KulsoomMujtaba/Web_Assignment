@@ -10,11 +10,6 @@ $bodyBackgrounColor: #ebebeb;
 $darkGrey: #707070;
 $lightGrey: #A9A9A9;
 
-// //screen sizes
-// $small: 576px;
-// $medium: 768px;
-// $large: 992;
-
 // Mixin
 @mixin imageDimensions($size){
   width: $size;
@@ -69,6 +64,16 @@ tr.bordered {
 #back{
   display: none;
   margin: 30px;
+}
+
+//Responsiveness on small screens
+@media (max-width: 300px) { 
+  td {
+   font-size: 12px;
+  }
+  h5,th{
+    font-size: 15px;
+  }
 }
 
 

@@ -42,4 +42,11 @@ tr.bordered {
   display: none;
   margin: 30px; }
 
+@media (max-width: 300px) {
+  td {
+    font-size: 12px; }
+
+  h5, th {
+    font-size: 15px; } }
+
 /*# sourceMappingURL=style.css.map */

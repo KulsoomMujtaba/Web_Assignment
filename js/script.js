@@ -6,10 +6,11 @@ $(document).ready(function(){
       //extract search text
       var artistInput = $("#searchText").val().trim();
       getArtists(artistInput, app_id);
+      //reset search bar
       $("#searchText").val("");
     });
 
-    //on- set on click for artist card that will be generated dynamically in the future
+    //on- For future elements like Artist card, which have not been generated yet.
     $(".artist").on("click",".artistCard",function(){
       var artist = $(".artistName").html();
         updateUIEventPage();
@@ -31,18 +32,16 @@ $(document).ready(function(){
       method: "GET",
       success:function(response) {
         $(".artist").empty();
-        // $.each(response, function(i,data) {
-              $("#numberOfArtist").html(response.length);
-              card=$("<div  class=\"artistCard card column col-xl-3 col-lg-4 col-md-5 col-sm-8  col-8\">");
-              cardBody=$(" <div class=\"card-body text-center\">");
-              cardBody.append( "<img src="+response.image_url+ " class=\"rounded-circle mr-3 profileImage \" alt=\"Profile Picture\"></img>");
-              cardBody.append("<h5 class=\"artistName\">"+response.name+"</h5>");
-              cardBody.append("<p class=\"url\">"+response.facebook_page_url+"</p>");
-              card.append(cardBody);
               
-              $(".artist").append(card);
+          card=$("<div  class=\"artistCard card column col-xl-4 col-lg-4 col-md-5 col-sm-6  col-8\">");
+          cardBody=$(" <div class=\"card-body text-center\">");
+          cardBody.append( "<img src="+response.image_url+ " class=\"rounded-circle mr-3 profileImage \" alt=\"Profile Picture\"></img>");
+          cardBody.append("<h5 class=\"artistName\">"+response.name+"</h5>");
+          cardBody.append("<p class=\"url\">"+response.facebook_page_url+"</p>");
+          card.append(cardBody);
           
-          // });
+          $(".artist").append(card);
+          
       }
     });
   }
@@ -55,8 +54,7 @@ $(document).ready(function(){
         url: queryEvent,
         method: "GET",
         error:function(xhr, textStatus, errorThrown){
-          // $(".js-no-artist").show();
-          // $(".js-artist-info").hide();
+          console.log(errorThrown);
           },
         success:function(response) {
             $(".event").empty();
@@ -88,10 +86,13 @@ $(document).ready(function(){
                   heading.append("<th class='th'>" + "Date" +"</th>" );
                   table.append(heading);
 
-
+                  var d = '12/12/1955 12:00:00 AM';
+                d = d.split(' ')[0];
+                console.log(d);
                   row=$("<tr>");
                   row.append("<td class='td'>" + data.venue.name +"</td>" );
-                  row.append("<td class='td'>" + data.datetime );
+                  row.append("<td class='td'>" + (data.datetime).split('T')[0]+"</td>" );
+
                   table.append(row);
                 card.append(table);
                 $(".event").append(card);
