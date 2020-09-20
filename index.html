@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <!-- Latest compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- Latest compiled JavaScript -->
+        <!-- JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Font awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- JQuery  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-        <!-- <link rel="" href="js/script.js"> -->
         <script src="js/script.js"></script>
         <!-- Style Sheet -->
         <link rel="stylesheet" href="css/style.css">
@@ -24,42 +20,23 @@
 <body>
 
   <!-- SEARCH BAR -->
-  <form class="form-inline d-flex justify-content-center md-form form-sm">
-    <input id="search" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-      aria-label="Search"
-      >
-      <button type="button" class="searchButton fa fa-search" ></button>
-  </form>
-
-     <!-- Profile Card -->
-     <section class="container-fluid">
-      <div class="row justify-content-center" >
-        <div class="card column col-xl-3 col-lg-4 col-md-5 col-sm-8  col-8">
-          
-          <!-- Card content -->
-          <!-- <div class="card-body d-flex flex-row"> -->
-
-          <div class="card-body text-center">
-            <!-- Avatar -->
-            <img src="assets/profile.png" class="js-artist-image rounded-circle mr-3" height="70px" width="70px" alt="avatar">
-          
-            <div>
-              <!-- Title -->
-              <h5 class="js-artist-name">Adeel Arshagggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggd</h5>
-              <!-- Subtitle -->
-              <p class="js-artist-url" >heloo urldhfvudfhhhhhhhhhhhhhhhhhhhh </p>
-            </div>
-
-          </div>
-        </div> <!-- end card -->
-      </div> <!-- end of row -->
-    </section>    
-    <!-- EVENT CARDS -->
-    <section class="container-fluid">
-      <div class="row justify-content-center event" >
-       
-    </div> <!-- end of row -->
-    </section>
+  <header id="searchBar" class="input-group">
+    <input id="searchText" class="form-control" type="text" placeholder="Search Artist" aria-label="Search">
+    <div class="input-group-append">
+      <span class="input-group-text " id="searchButton"><i class="fa fa-search text-grey"
+          aria-hidden="true"></i></span>
+    </div>
+  </header>
+    <!-- Profile Card -->
+  <section id="profilePage" class="container-fluid">
+    <!-- <h3 id="artistSearchResults">-1 Results found for "artist"</h3> -->
+    <div id="profile" class="row justify-content-center artist" >
+    </div> 
+  </section>    
+  <!-- EVENT CARDS-->
+  <section id="eventPage" class="container-fluid">
+    <div class="row justify-content-center  event" ></div> 
+  </section> 
 
   </body>
 </html>

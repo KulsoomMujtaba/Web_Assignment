@@ -7,8 +7,8 @@ $subHeading: 'Roboto Slab', serif;
 $heading: 'Quicksand', sans-serif;
 // colours
 $bodyBackgrounColor: #ebebeb;
-$fontDarkGrey: #A0A0A0;
-$fontLightGrey: #C0C0C0;
+$darkGrey: #A0A0A0;
+$lightGrey: #C0C0C0;
 
 //screen sizes
 $small: 576px;
@@ -19,7 +19,11 @@ body {
     background-color:$bodyBackgrounColor;
 }
 
-/*EVENT CARD STYLING*/
+//Search bar 
+#searchBar {
+  padding: 50px;
+}
+/*CARD STYLING*/
 .card {
     //Add shadows to create the "card" effect 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -31,17 +35,18 @@ body {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+//Event table styling
 th, h5 {
-    color: $fontDarkGrey;
+    color: $darkGrey;
     font-family: $heading;
   }
 #url,td {
-    color:$fontLightGrey;
+    color:$lightGrey;
     font-family: $subHeading;
 }
 tr.bordered {
-    border-bottom: 1px solid $fontLightGrey;
-    width: 50%;
+    border-bottom: 1px solid $lightGrey;
+    width: 95%;
 }
 
 @media (min-width: 768px) and (max-width: 950px) {
