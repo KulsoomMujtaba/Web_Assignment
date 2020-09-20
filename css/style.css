@@ -16,15 +16,30 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 th, h5 {
-  color: #A0A0A0;
+  color: #707070;
   font-family: "Quicksand", sans-serif; }
 
-#url, td {
-  color: #C0C0C0;
+.url, td {
+  color: #A9A9A9;
   font-family: "Roboto Slab", serif; }
 
 tr.bordered {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #A9A9A9;
   width: 95%; }
+
+.profileImage {
+  width: 70px;
+  height: 70px; }
+
+#backIcon {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px; }
+
+#back {
+  display: none;
+  margin: 30px; }
 
 /*# sourceMappingURL=style.css.map */

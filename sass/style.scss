@@ -7,13 +7,19 @@ $subHeading: 'Roboto Slab', serif;
 $heading: 'Quicksand', sans-serif;
 // colours
 $bodyBackgrounColor: #ebebeb;
-$darkGrey: #A0A0A0;
-$lightGrey: #C0C0C0;
+$darkGrey: #707070;
+$lightGrey: #A9A9A9;
 
-//screen sizes
-$small: 576px;
-$medium: 768px;
-$large: 992;
+// //screen sizes
+// $small: 576px;
+// $medium: 768px;
+// $large: 992;
+
+// Mixin
+@mixin imageDimensions($size){
+  width: $size;
+  height: $size;
+}
 
 body {
     background-color:$bodyBackgrounColor;
@@ -35,12 +41,12 @@ body {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-//Event table styling
+//Event Stlying
 th, h5 {
     color: $darkGrey;
     font-family: $heading;
   }
-#url,td {
+.url,td {
     color:$lightGrey;
     font-family: $subHeading;
 }
@@ -48,10 +54,22 @@ tr.bordered {
     border-bottom: 1px solid $lightGrey;
     width: 95%;
 }
-
-@media (min-width: 768px) and (max-width: 950px) {
+//Profile Styling
+.profileImage{
+  @include imageDimensions(70px);
+}
+//Back to results
+#backIcon{ 
+  @include imageDimensions(15px);
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
 
 }
-@media (max-width: $small) {
-
+#back{
+  display: none;
+  margin: 30px;
 }
+
+
+

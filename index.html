@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
   <!-- SEARCH BAR -->
   <header id="searchBar" class="input-group">
     <input id="searchText" class="form-control" type="text" placeholder="Search Artist" aria-label="Search">
@@ -27,11 +26,15 @@
           aria-hidden="true"></i></span>
     </div>
   </header>
+
+  <!-- Back Button -->
+  <div id="back">
+    <img id="backIcon" src="assets/backIcon.png" alt="back icon"/>
+    <p id="backText">Back to results</p>
+  </div>
     <!-- Profile Card -->
   <section id="profilePage" class="container-fluid">
-    <!-- <h3 id="artistSearchResults">-1 Results found for "artist"</h3> -->
-    <div id="profile" class="row justify-content-center artist" >
-    </div> 
+    <div class="row justify-content-center artist" ></div> 
   </section>    
   <!-- EVENT CARDS-->
   <section id="eventPage" class="container-fluid">
