@@ -11,7 +11,9 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <link rel="js" href="js/JQuery/script.js">
+
+        <!-- <link rel="" href="js/script.js"> -->
+        <script src="js/script.js"></script>
         <!-- Style Sheet -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Bootstrap Mobilde first approach. Device-width: follow screen width of the device. Initial-Scale- sets initial zoom level -->
@@ -23,118 +25,41 @@
 
   <!-- SEARCH BAR -->
   <form class="form-inline d-flex justify-content-center md-form form-sm">
-    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-      aria-label="Search">
-    <i class="fa fa-search" ></i>
+    <input id="search" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+      aria-label="Search"
+      >
+      <button type="button" class="searchButton fa fa-search" ></button>
   </form>
 
-    <!-- EVENT CARD -->
-    <section class="container-fluid">
+     <!-- Profile Card -->
+     <section class="container-fluid">
       <div class="row justify-content-center" >
-        <div class="card column col-lg-3 col-md-3 col-sm-3">
-            <div class="card-body">
-              <table class="table table-borderless">
-                <tr class="bordered">
-                  <th colspan="2">EVENT DETAILS</th>
-                </tr>
-                <tr>
-                  <th>Country</th>
-                  <th>City</th> 
-                </tr>
-                <tr>
-                  <td>Pakistan</td>
-                  <td>Islamabad</td>
-                </tr>
-                <tr>
-                  <th>Venue</th>
-                  <th>Date</th> 
-                </tr>
-                <tr>
-                  <td>Avari Hotel</td>
-                  <td>23 Sept, 2019</td>
-                </tr>
-              </table>
-          </div> <!-- end card body-->
-        </div> <!-- end card -->
-        <div class="card column col-lg-3 col-md-3 col-sm-3">
-          <div class="card-body">
-            <table class="table table-borderless">
-              <tr class="bordered">
-                <th colspan="2">EVENT DETAILS</th>
-              </tr>
-              <tr>
-                <th>Country</th>
-                <th>City</th> 
-              </tr>
-              <tr>
-                <td>Pakistan</td>
-                <td>Islamabad</td>
-              </tr>
-              <tr>
-                <th>Venue</th>
-                <th>Date</th> 
-              </tr>
-              <tr>
-                <td>Avari Hotel</td>
-                <td>23 Sept, 2019</td>
-              </tr>
-            </table>
-        </div> <!-- end card body-->
-      </div> <!-- end card -->
-  
-      <div class="card column col-lg-3 col-md-3 col-sm-3">
-        <div class="card-body">
-          <table class="table table-borderless">
-            <tr class="bordered">
-              <th colspan="2">EVENT DETAILS</th>
-            </tr>
-            <tr>
-              <th>Country</th>
-              <th>City</th> 
-            </tr>
-            <tr>
-              <td>Pakistan</td>
-              <td>Islamabad</td>
-            </tr>
-            <tr>
-              <th>Venue</th>
-              <th>Date</th> 
-            </tr>
-            <tr>
-              <td>Avari Hotel</td>
-              <td>23 Sept, 2019</td>
-            </tr>
-          </table>
-      </div> <!-- end card body-->
-    </div> <!-- end card -->
-    </div> <!-- end of row -->
-    </section>
-
-
-    <!-- Profile Card -->
-    <section class="container-fluid">
-      <div class="row justify-content-center" >
-        <div class="card column col-lg-3 col-md-3 col-sm-3">
+        <div class="card column col-xl-3 col-lg-4 col-md-5 col-sm-8  col-8">
           
           <!-- Card content -->
-          <div class="card-body d-flex flex-row">
+          <!-- <div class="card-body d-flex flex-row"> -->
 
+          <div class="card-body text-center">
             <!-- Avatar -->
-            <img src="assets/profile.png" class="rounded-circle mr-3" height="70px" width="70px" alt="avatar">
-
-            <!-- Content -->
+            <img src="assets/profile.png" class="js-artist-image rounded-circle mr-3" height="70px" width="70px" alt="avatar">
+          
             <div>
-
               <!-- Title -->
-              <h5 >Adeel Arshad</h5>
+              <h5 class="js-artist-name">Adeel Arshagggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggd</h5>
               <!-- Subtitle -->
-              <p id="url" > www.facebook.com/adeelArshad</p>
-
+              <p class="js-artist-url" >heloo urldhfvudfhhhhhhhhhhhhhhhhhhhh </p>
             </div>
 
-          </div> <!-- end card body-->
+          </div>
         </div> <!-- end card -->
       </div> <!-- end of row -->
     </section>    
+    <!-- EVENT CARDS -->
+    <section class="container-fluid">
+      <div class="row justify-content-center event" >
+       
+    </div> <!-- end of row -->
+    </section>
+
   </body>
 </html>
